@@ -1,22 +1,87 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+int main(){
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    // CRIANDO CIDADE 01
+
+    char estado1[3], codigocarta1[4], nomecidade1[50]; // char do modo string - %c ou %s 
+    int populacao1, pontosturisticos1; // variaveis inteiras - %d
+    float area1, pib1; // flutuante - %f
+
+    // Cadastrando Cartas Cidade 01
+
+    printf("Código da Carta: ");
+    scanf("%s", codigocarta1);  
+
+    printf("Estado: ");
+    scanf("%s", estado1);    
+
+    printf("Nome da Cidade: ");
+    scanf("%s" , nomecidade1);
+
+    printf("Populacao: ");
+    scanf("%d", populacao1);
+
+    printf("Area: ");
+    scanf("%f", area1);
+
+    printf("PIB: ");
+    scanf("%f", pib1);
+
+    printf("Pontos Turisticos: ");
+    scanf("%d", pontosturisticos1);
+
+    // EXIBIÇÃO DAS CARTAS 01
+
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf("Código da Carta: %s\n", codigocarta1);
+    printf("Estado: %s\n", estado1);
+    printf("Nome da Cidade: %s\n", nomecidade1);
+printf("Populacao: %d\n", populacao1);
+    printf("Area: %.2f\n", area1);
+    printf("PIB: %.2f\n", pib1);
+    printf("Pontos Turisticos: %d\n", pontosturisticos1);
+
+
+
+ // CRIANDO CIDADE 02
+
+    char estado2[3], codigocarta2[4], nomecidade2[50]; // char do modo string - %c ou %s 
+    int populacao2, pontosturisticos2; // variaveis inteiras - %d
+    float area2, pib2; // flutuante - %f
+
+ // Cadastrando Cartas Cidade 02
+
+    printf("Código da Carta: ");
+    scanf("%s", codigocarta2);  
+
+    printf("Estado: ");
+    scanf("%s", estado2);    
+
+    printf("Nome da Cidade: ");
+    scanf("%s" , nomecidade2);
+
+    printf("Populacao: ");
+    scanf("%d", populacao2);
+
+    printf("Area: ");
+    scanf("%f", area2);
+
+    printf("PIB: ");
+    scanf("%f", pib2);
+
+    printf("Pontos Turisticos: ");
+    scanf("%d", pontosturisticos2);
+
+// EXIBIÇÃO DAS CARTAS 02
+
+    printf("Código da Carta: %s\n", codigocarta2);
+    printf("Estado: %s\n", estado2);
+    printf("Nome da Cidade: %s\n", nomecidade2);
+    printf("Populacao: %d\n", populacao2);
+    printf("Area: %.2f\n", area2);
+    printf("PIB: %.2f\n", pib2);
+    printf("Pontos Turisticos: %d\n", pontosturisticos2);
 
     return 0;
 }
