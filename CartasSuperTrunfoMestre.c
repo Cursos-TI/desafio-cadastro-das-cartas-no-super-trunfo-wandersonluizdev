@@ -5,6 +5,7 @@ int main() {
     char estado1[20], codigocarta1[20], nomecidade1[50]; // char do modo string - %c ou %s 
     int populacao1, pontosturisticos1; // variaveis inteiras - %d
     float area1, pib1, densidadepo1, pibpercapita1; // flutuante - %f
+    float super_poder1;
 
     // Cadastrando Cartas Cidade 01
     printf("Código da Carta: ");
@@ -47,6 +48,7 @@ int main() {
     char estado2[20], codigocarta2[20], nomecidade2[50]; // char do modo string - %c ou %s 
     int populacao2, pontosturisticos2; // variaveis inteiras - %d
     float area2, pib2, densidadepo2, pibpercapita2; // flutuante - %f
+    float super_poder2;
 
     // Cadastrando Cartas Cidade 02
     printf("Código da Carta: ");
@@ -74,6 +76,10 @@ int main() {
     densidadepo2 = (float) populacao2 / area2;
     pibpercapita2 = (float) pib2 / populacao2;
 
+    // Calculando Super Poder Carta 1 e 2
+    super_poder1 = populacao1 + area1 + pib1 + (1 / densidadepo1) + pibpercapita1;
+    super_poder2 = populacao2 + area2 + pib2 + (1 / densidadepo2) + pibpercapita2;
+
     // EXIBIÇÃO DAS CARTAS 02
     printf("Código da Carta: %s\n", codigocarta2);
     printf("Estado: %s\n", estado2);
@@ -85,5 +91,17 @@ int main() {
     printf("Densidade populacional: %.2f hab/km²\n", densidadepo2);
     printf("PIB per capita: %.2f reais\n", pibpercapita2);
     
+    // Comparação de Cartas
+    if (populacao1 > populacao2) {
+        printf("Carta 1: %s Venceu!!! \n", nomecidade1);
+    } else if (populacao2 > populacao1) {
+        printf("Carta 2: %s Venceu!!! \n", nomecidade2);
+    } else {
+        printf("As duas cartas têm a mesma população.\n");
+    }
+
+    printf("Carta 1 - %s, Estado: %s, Populacao: %d\n", nomecidade1, estado1, populacao1);
+    printf("Carta 2 - %s, Estado: %s, Populacao: %d\n", nomecidade2, estado2, populacao2);
+
     return 0;
 }
